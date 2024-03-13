@@ -1,4 +1,4 @@
-# Trajectron
+# Shared autonomy experiment of Robot Trajectron
 
 ## Requirements
 
@@ -50,4 +50,5 @@ The "up", "down", "left", "right" represent the moving in x-axis positive/negati
 ## Acknowledgement
 
 This repo is based on the code in https://github.com/Shared-control/improved-apf
+
 Thanks for the help from Jordan Antypas@KU Leuven and Maria Papadopoulou@KU Leuven.
