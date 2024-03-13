@@ -1,0 +1,30 @@
+<launch>
+    <arg name="sim" default="true" />
+    <!--distance_prediction: True = prediction based on distance, False = prediciton based on MaxEnt IOC + assistance-->
+    <arg name="distance_predictor" default="false"/>
+    <arg name="teleop" default="false" />
+    <arg name="gripper" default="true" />
+    <arg name="robot_type" default="/ur5" />
+    <arg name="grasp" default="true" />
+    <arg name="index_test" default="0" />
+    <arg name="user_type" default="keyboard" />
+    <arg name="name_user_test" default="user" />
+    <arg name="dynamic" default="false" />
+
+    <arg name="escape" default="true" />
+    
+    
+    <node pkg="control_manip" type="control_manip_manager_node" name="control_manip_node" output="screen">
+        <param name="sim" type="bool" value="$(arg sim)" />
+        <param name="gripper" type="bool" value="$(arg gripper)" />
+        <param name="robot_type" type="string" value="$(arg robot_type)"  />
+        <param name="dynamic" type="bool" value="$(arg dynamic)" />
+        <remap from="robot_description" to="ur5/robot_description" />
+        <remap from="control_manip_node/objects_srv" to="objects_srv" />
+        <remap from="control_manip_node/move_srv" to="move_srv" />
+        <remap from="control_manip_node/objects_msg" to="objects_msg" if="$(eval dynamic)" />
+    </node>
+
+    <node pkg="control_manip" type="control_manip_joints_node" name="control_manip_joints_node"  output="screen">
+    </node>
+</launch>

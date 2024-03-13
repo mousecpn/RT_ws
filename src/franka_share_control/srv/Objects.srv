@@ -1,0 +1,3 @@
+bool flag
+---
+geometry_msgs/PoseArray goals

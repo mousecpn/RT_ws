@@ -1,0 +1,19 @@
+material material/artag9
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 12.5
+      texture_unit
+      {
+        texture tag36_11_00009.png
+        filtering anistropic
+        max_anisotropy 16
+        scale 1 1
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+<model name='cube_3'>
+    <link name='cube_3_link'>
+        <pose frame=''>0.8 -0.3 -0 0 -0 0</pose>
+        <inertial>
+            <mass>2</mass>
+            <inertia>
+            <ixx>0.0166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.0166667</izz>
+            </inertia>
+            <pose frame=''>0.8 -0.3 -0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+            <pose frame=''>0.8 -0.3 -0 0 -0 0</pose>
+            <geometry>
+            <box>
+                <size>0.1 0.1 0.1</size>
+            </box>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+            <contact>
+                <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+                <torsional>
+                <ode/>
+                </torsional>
+                <ode/>
+            </friction>
+            </surface>
+        </collision>
+        <visual name='visual'>
+            <pose frame=''>0.8 -0.3 -0 0 -0 0</pose>
+            <geometry>
+            <box>
+                <size>0.1 0.1 0.1</size>
+            </box>
+            </geometry>
+            <material>
+                <ambient>0 0 1 1</ambient>
+                <diffuse>0 0 1 1</diffuse>
+                <specular>0.1 0.1 0.1 1 1</specular>
+                <emissive>0 0 1 1</emissive>
+            </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <enable_wind>0</enable_wind>
+    </link>
+    <!-- <link name='tag11'>
+    <pose frame=''>0 0 0.05 0 -0 0</pose>
+    <collision name='collision'>
+        <geometry>
+        <box>
+            <size>0.065 0.065 0.0001</size>
+        </box>
+        </geometry>
+        <max_contacts>10</max_contacts>
+        <surface>
+        <contact>
+            <ode/>
+        </contact>
+        <bounce/>
+        <friction>
+            <torsional>
+            <ode/>
+            </torsional>
+            <ode/>
+        </friction>
+        </surface>
+    </collision> -->
+    <!-- <visual name='visual'>
+        <cast_shadows>0</cast_shadows>
+        <geometry>
+        <box>
+            <size>0.065 0.065 0.0001</size>
+        </box>
+        </geometry>
+        <material>
+        <script>
+            <uri>model://artag/materials/scripts</uri>
+            <uri>model://artag/materials/textures</uri>
+            <name>material/artag10</name>
+        </script>
+        </material>
+    </visual> -->
+    <!-- <self_collide>0</self_collide>
+    <inertial>
+        <inertia>
+        <ixx>1</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>1</iyy>
+        <iyz>0</iyz>
+        <izz>1</izz>
+        </inertia>
+        <mass>1</mass>
+    </inertial>
+    <kinematic>0</kinematic>
+    <gravity>1</gravity>
+    <enable_wind>0</enable_wind>
+    </link>
+    <joint name='blue_cube_2_tag11' type='fixed'>
+    <parent>blue_cube_2_link</parent>
+    <child>tag11</child>
+    <pose frame=''>0 0 0 0 -0 0</pose>
+    </joint> -->
+</model>
+</sdf>
