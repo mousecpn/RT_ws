@@ -27,7 +27,7 @@ cd ..
 ```
 
 ## Usage
-#### Activate trajectron
+#### Activate Trajectron (Recommend to run it in VSCode, use "Run and Debug")
 
 ``` bash
 python src/trajectron/src/trajectron_node.py --model_path /path/to/model
