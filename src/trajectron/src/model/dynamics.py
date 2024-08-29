@@ -134,6 +134,13 @@ class SingleIntegrator(Dynamic):
         """
         p_0 = self.initial_conditions['pos'].unsqueeze(1)
         ph = v_dist.mus.shape[-3]
+        dim = p_0.shape[-1]
+        if dim == 3:
+            self.F = self.F3d
+            self.F_t = self.F_t3d
+        else:
+            self.F = self.F2d
+            self.F_t = self.F_t2d
         sample_batch_dim = list(v_dist.mus.shape[0:2])
         pos_dist_sigma_matrix_list = []
         T = 1
