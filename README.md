@@ -33,13 +33,13 @@ cd ..
 python src/trajectron/src/trajectron_node.py --model_path /path/to/model
 ```
 
-#### Activate simulation (Recommend to run it in VSCode)
+#### Activate simulation (Recommend to run it in VSCode, use "Run and Debug")
 
 ``` bash
 python src/franka_share_control/src/franka_sim_world.py 
 ```
 
-#### Activate shared control
+#### Activate shared control (Recommend to run it in VSCode, use "Run and Debug")
 
 ``` bash
 python src/shared_control/src/shared_control/SharedControlPybullet.py
